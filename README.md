@@ -46,18 +46,18 @@ The Application is a single-page web application and all activities are asynchro
     ```
 - Along with Node.js, Angular CLI needs to be installed as well. <br />
 - To install Angular CLI, run the following command in cmd (After installation of Node and NPM). <br />
-    ```
+    ```console
     npm install -g @angular/cli
     ```
 - To check if CLI has been installed correctly on the system, run the following command on cmd. <br />
-    ```
+    ```console
     ng v
     ```
 4. **PostgreSQL**:
 - PostgreSQL needs to be installed on the system to run the script file provided [here](https://github.com/rishikesh-yelne/ProgrammingChallenge/blob/master/db-scripts.psql). <br />
 - Installation link is available [here](#resources-used) in Backend/PostgreSQL section. <br />
 - To check if CLI has been installed correctly on the system, run the following command on cmd. <br />
-    ```
+    ```console
     psql --version
     ```
 - After successful installation of PostgreSQL, execute the following script in cmd. <br />
@@ -71,12 +71,12 @@ The Application is a single-page web application and all activities are asynchro
 
 ## Run the application
 To run the application, following commands are required to be executed
-```
+```console
 cd <Local_Repo_Location>/ProgrammingChallenge/prog-challenge-backend-java
 ./mvnw spring-boot:run
 ```
 After the backend is up and running
-```
+```console
 cd <Local_Repo_Location>/ProgrammingChallenge/prog-challege-frontend-angular
 npm install
 ng serve --open
