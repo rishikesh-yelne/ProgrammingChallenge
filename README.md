@@ -1,1 +1,85 @@
-Programming Challenge
+## Machado Lab Programming Challenge
+Challenge Link : (https://github.com/machado-lab/programming-challenge)
+
+Hi! This is a single-page Web Application developed to view the population and movement of animal species via Ag-Grid tables.
+
+**Technologies Used :** Java Springboot, PostgreSQL, Angular, HTML, CSS, Typescript, Bootstrap.
+
+**Author :** Rishikesh Yelne
+
+## About the Application
+The Application is a single-page web application and all activities are asynchronously performed, ie. the whole page is not refreshed/reloaded. Following are the main activities:
+1. Population
+- List of all premises is loaded in an Ag-Grid which shows all details about the Premise.
+- Details include: Name, Address, City, State, Postal Code, Latitude & Longitude.
+- The grid also contains the current total count of animals present at the premise.
+2. Movement
+- List of all movement records is loaded in an Ag-Grid which shows all movement related details.
+- Details include: Company Name, Species, Reason, Moved Count, Start Date, Origin Premise Id & Destination Premise Id.
+- A provision to add a movement record is provided within the component, which adds a row within the grid (without reloading the webpage or the whole grid).
+
+## Pre-Requisites
+1. **Java**:
+	For the backend, Java is required to be installed on the system. 
+    To check if Java has been installed correctly on the system, run the following command on cmd.
+    ```console
+    java -version
+    ```
+2. **Maven**:
+    Maven needs to be installed to run the command which would publish the web application on localhost.
+    To check if Maven has been installed correctly on the system, run the following command on cmd.
+    ```console
+    mvn -v
+    ```    
+3. **Node.js**:
+    Node.js needs to be installed to run the Angular application on the system
+    To check if Node.js has been installed correctly on the system, run the following command on cmd.
+    ```console
+    node -v
+    npm -v
+    ```
+4. **PostgreSQL**:
+    PostgreSQL needs to be installed on the system to run the script file provided [here](https://github.com/rishikesh-yelne/ProgrammingChallenge/blob/master/db-scripts.psql).
+
+## Run the application
+To run the application, following commands are required to be executed
+```console
+*Initialize the database*
+psql -h localhost -d postgres -U postgres -p 5432 -a -q -f <Repo_Location>/ProgrammingChallenge/db-scripts.psql
+./
+
+*After the above script is executed*
+cd <Repo_Location>/ProgrammingChallenge/prog-challenge-backend-java
+./mvnw spring-boot:run
+
+*After the backend is up and running*
+cd <Repo_Location>/ProgrammingChallenge/prog-challege-frontend-angular
+ng serve --open
+```
+> **Please note**: Replace <Repo_Location> with the file path at which this GitHub repository has been cloned.
+
+## Resources Used
+- **Backend**
+    - **Java Springboot**
+        - [Java Installation](https://www.oracle.com/java/technologies/downloads/#jdk18-windows)
+        - [Initialize Springboot application](https://start.spring.io/) 
+        - [Maven Installation](https://maven.apache.org/install.html)
+        - [Eclipse IDE](https://www.eclipse.org/downloads/packages/release/kepler/sr2/eclipse-ide-java-ee-developers)
+    - **PostgreSQL**
+        - [Download Setup](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+        - [pgAdmin Download](https://www.pgadmin.org/download/pgadmin-4-windows/)
+        - [Documentation](https://www.postgresql.org/docs/14/index.html)
+    - **Postman** - [Download Setup](https://www.postman.com/downloads/)
+- **Frontend**
+    - **Node.js** 
+        - [Download Setup](https://nodejs.org/en/download/)
+        - [Documentation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+    - **Angular** - [Documentation](https://angular.io/docs)
+    - **Ag Grid - Angular** - [Documentation](https://www.ag-grid.com/angular-data-grid/getting-started/)
+    - **Bootstrap** - [Documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+    - **Icons** 
+        - [NCSU Icons](https://brand.ncsu.edu/downloads/)
+        - [Standard Icons](https://github.com/simple-icons/simple-icons)
+
+## Application Demo
+The [Demo](https://github.com/rishikesh-yelne/ProgrammingChallenge/demo) folder contains the screen recording of the application to demonstrate the various features of the application.
