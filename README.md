@@ -80,7 +80,7 @@ spring.datasource.password=postgres //modify the password here
 To run the application, following commands are required to be executed
 ```console
 cd <Local_Repo_Location>/ProgrammingChallenge/prog-challenge-backend-java
-./mvnw spring-boot:run
+mvnw spring-boot:run
 ```
 After the backend is up and running
 ```console
