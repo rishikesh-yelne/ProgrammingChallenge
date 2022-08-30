@@ -5,7 +5,7 @@ Hi! This is a single-page Web Application developed to view the population and m
 
 **Technologies Used :** Java Springboot, PostgreSQL, Angular, HTML, CSS, Typescript, Bootstrap.
 
-**Author :** Rishikesh Yelne
+**Author :** Rishikesh Pravin Yelne
 
 ## About the Application
 The Application is a single-page web application and all activities are asynchronously performed, ie. the whole page is not refreshed/reloaded. Following are the main activities:
@@ -66,7 +66,7 @@ The Application is a single-page web application and all activities are asynchro
     ```
 > **Please note**: You might be prompted to provide the password for postgres user in cmd to execute the script.
 
-> **Please note**: Please <Local_Repo_Location> with the file path at which this GitHub repository has been cloned.
+> **Please note**: Replace <Local_Repo_Location> with the file path at which this GitHub repository has been cloned.
 - Before running the application, modify the [application.properties](https://github.com/rishikesh-yelne/ProgrammingChallenge/blob/master/prog-challenge-backend-java/src/main/resources/application.properties) file with the password configured for ```postgres``` username
 ```.properties
 ...
