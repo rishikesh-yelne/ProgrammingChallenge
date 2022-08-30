@@ -20,52 +20,53 @@ The Application is a single-page web application and all activities are asynchro
 
 ## Pre-Requisites
 1. **Java**:
-	For the backend, Java is required to be installed on the system. 
-    Installation link is available [here](#resources-used) in Backend/Java Springboot section
-    Ensure that the ```JAVA_HOME``` environment variable is configured.
-    To check if Java has been installed correctly on the system, run the following command on cmd.
+- For the backend, Java is required to be installed on the system.
+- Installation link is available [here](#resources-used) in Backend/Java Springboot section. <br />
+- Ensure that the ```JAVA_HOME``` environment variable is configured. <br />
+- To check if Java has been installed correctly on the system, run the following command on cmd. <br />
     ```console
     java -version
     ```
 2. **Maven**:
-    Maven needs to be installed to run the command which would publish the web application on localhost.
-    Installation link is available [here](#resources-used) in Backend/Java Springboot section
-    You can download the zip file, unzip it and paste it in the Program Files folder.
-    Additionally, add the path of bin folder to the ```PATH``` environment variable
-    To check if Maven has been installed correctly on the system, run the following command on cmd.
+- Maven needs to be installed to run the command which would publish the web application on localhost. <br />
+- Installation link is available [here](#resources-used) in Backend/Java Springboot section. <br />
+- You can download the zip file, unzip it and paste it in the Program Files folder. <br />
+- Additionally, add the path of bin folder to the ```PATH``` environment variable. <br />
+- To check if Maven has been installed correctly on the system, run the following command on cmd. <br />
     ```console
     mvn -v
     ```    
 3. **Node.js**:
-    Node.js needs to be installed to run the Angular application on the system
-    Installation link is available [here](#resources-used) in Frontend/Node.js section
-    To check if Node.js has been installed correctly on the system, run the following command on cmd.
+- Node.js needs to be installed to run the Angular application on the system. <br />
+- Installation link is available [here](#resources-used) in Frontend/Node.js section. <br />
+- To check if Node.js has been installed correctly on the system, run the following command on cmd. <br />
     ```console
     node -v
     npm -v
     ```
-    Along with Node.js, Angular CLI needs to be installed as well
-    To install Angular CLI, run the following command in cmd (After installation of Node and NPM)
+- Along with Node.js, Angular CLI needs to be installed as well. <br />
+- To install Angular CLI, run the following command in cmd (After installation of Node and NPM). <br />
     ```
     npm install -g @angular/cli
     ```
-    To check if CLI has been installed correctly on the system, run the following command on cmd.
+- To check if CLI has been installed correctly on the system, run the following command on cmd. <br />
     ```
     ng v
     ```
 4. **PostgreSQL**:
-    PostgreSQL needs to be installed on the system to run the script file provided [here](https://github.com/rishikesh-yelne/ProgrammingChallenge/blob/master/db-scripts.psql).
-    Installation link is available [here](#resources-used) in Backend/PostgreSQL section
-    To check if CLI has been installed correctly on the system, run the following command on cmd.
+- PostgreSQL needs to be installed on the system to run the script file provided [here](https://github.com/rishikesh-yelne/ProgrammingChallenge/blob/master/db-scripts.psql). <br />
+- Installation link is available [here](#resources-used) in Backend/PostgreSQL section. <br />
+- To check if CLI has been installed correctly on the system, run the following command on cmd. <br />
     ```
     psql --version
     ```
-    After successful installation of PostgreSQL, execute the following script in cmd.
+- After successful installation of PostgreSQL, execute the following script in cmd. <br />
     ```console
     psql -h localhost -d postgres -U postgres -p 5432 -a -q -f <Local_Repo_Location>/ProgrammingChallenge/db-scripts.psql
     ```
-    > **Please note**: You might be prompted to provide the password for postgres user in cmd to execute the script.
-    > **Please note**: Please <Local_Repo_Location> with the file path at which this GitHub repository has been cloned.
+> **Please note**: You might be prompted to provide the password for postgres user in cmd to execute the script.
+
+> **Please note**: Please <Local_Repo_Location> with the file path at which this GitHub repository has been cloned.
     
 
 ## Run the application
@@ -73,9 +74,11 @@ To run the application, following commands are required to be executed
 ```
 cd <Local_Repo_Location>/ProgrammingChallenge/prog-challenge-backend-java
 ./mvnw spring-boot:run
-
-*After the backend is up and running*
+```
+After the backend is up and running
+```
 cd <Local_Repo_Location>/ProgrammingChallenge/prog-challege-frontend-angular
+npm install
 ng serve --open
 ```
 > **Please note**: Replace <Local_Repo_Location> with the file path at which this GitHub repository has been cloned.
