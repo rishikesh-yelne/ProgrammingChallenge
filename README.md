@@ -21,7 +21,7 @@ The Application is a single-page web application and all activities are asynchro
 ## Pre-Requisites
 1. **Java**:
 - For the backend, Java is required to be installed on the system.
-- Installation link is available [here](#resources-used) in Backend/Java Springboot section. <br />
+- Installation link is available [here](#resources-used) in **Backend/Java Springboot** section. <br />
 - Ensure that the ```JAVA_HOME``` environment variable is configured. <br />
 - To check if Java has been installed correctly on the system, run the following command on cmd. <br />
     ```console
@@ -29,7 +29,7 @@ The Application is a single-page web application and all activities are asynchro
     ```
 2. **Maven**:
 - Maven needs to be installed to run the command which would publish the web application on localhost. <br />
-- Installation link is available [here](#resources-used) in Backend/Java Springboot section. <br />
+- Installation link is available [here](#resources-used) in **Backend/Java Springboot** section. <br />
 - You can download the zip file, unzip it and paste it in the Program Files folder. <br />
 - Additionally, add the path of bin folder to the ```PATH``` environment variable. <br />
 - To check if Maven has been installed correctly on the system, run the following command on cmd. <br />
@@ -38,7 +38,7 @@ The Application is a single-page web application and all activities are asynchro
     ```    
 3. **Node.js**:
 - Node.js needs to be installed to run the Angular application on the system. <br />
-- Installation link is available [here](#resources-used) in Frontend/Node.js section. <br />
+- Installation link is available [here](#resources-used) in **Frontend/Node.js** section. <br />
 - To check if Node.js has been installed correctly on the system, run the following command on cmd. <br />
     ```console
     node -v
@@ -55,7 +55,7 @@ The Application is a single-page web application and all activities are asynchro
     ```
 4. **PostgreSQL**:
 - PostgreSQL needs to be installed on the system to run the script file provided [here](https://github.com/rishikesh-yelne/ProgrammingChallenge/blob/master/db-scripts.psql). <br />
-- Installation link is available [here](#resources-used) in Backend/PostgreSQL section. <br />
+- Installation link is available [here](#resources-used) in **Backend/PostgreSQL** section. <br />
 - To check if CLI has been installed correctly on the system, run the following command on cmd. <br />
     ```console
     psql --version
@@ -67,7 +67,14 @@ The Application is a single-page web application and all activities are asynchro
 > **Please note**: You might be prompted to provide the password for postgres user in cmd to execute the script.
 
 > **Please note**: Please <Local_Repo_Location> with the file path at which this GitHub repository has been cloned.
-    
+- Before running the application, modify the [application.properties](https://github.com/rishikesh-yelne/ProgrammingChallenge/blob/master/prog-challenge-backend-java/src/main/resources/application.properties) file with the password configured for ```postgres``` username
+```.properties
+...
+spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+spring.datasource.username=postgres
+spring.datasource.password=postgres //modify the password here
+...
+```   
 
 ## Run the application
 To run the application, following commands are required to be executed
