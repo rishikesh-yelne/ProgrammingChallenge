@@ -56,7 +56,8 @@ The Application is a single-page web application and all activities are asynchro
 4. **PostgreSQL**:
 - PostgreSQL needs to be installed on the system to run the script file provided [here](https://github.com/rishikesh-yelne/ProgrammingChallenge/blob/master/db-scripts.psql). <br />
 - Installation link is available [here](#resources-used) in **Backend/PostgreSQL** section. <br />
-- To check if CLI has been installed correctly on the system, run the following command on cmd. <br />
+- Additionally, add the path of bin folder to the ```PATH``` environment variable. <br />
+- To check if PostgreSQL has been installed correctly on the system, run the following command on cmd. <br />
     ```console
     psql --version
     ```
@@ -95,7 +96,8 @@ ng serve --open
     - **Java Springboot**
         - [Java Installation](https://www.oracle.com/java/technologies/downloads/#jdk18-windows)
         - [Initialize Springboot application](https://start.spring.io/) 
-        - [Maven Installation](https://maven.apache.org/install.html)
+        - [Maven Download](https://maven.apache.org/download.cgi)
+        - [Maven Installation Steps](https://maven.apache.org/install.html)
         - [Eclipse IDE](https://www.eclipse.org/downloads/packages/release/kepler/sr2/eclipse-ide-java-ee-developers)
     - **PostgreSQL**
         - [Download Setup](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
