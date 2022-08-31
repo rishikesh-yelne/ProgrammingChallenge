@@ -116,4 +116,4 @@ ng serve --open
         - [Standard Icons](https://github.com/simple-icons/simple-icons)
 
 ## Application Demo
-The [Demo](https://github.com/rishikesh-yelne/ProgrammingChallenge/demo) folder contains the screen recording of the application to demonstrate the various features of the application.
+The [Demo](https://github.com/rishikesh-yelne/ProgrammingChallenge/tree/master/demo) folder contains the screen recording of the application to demonstrate the various features of the application.
